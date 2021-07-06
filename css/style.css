@@ -1,0 +1,261 @@
+.container{
+  display: grid;
+  grid: auto;
+  margin: 0 13%;
+  padding: 5%;
+  text-align: justify;
+  background: white;
+}
+body{
+  background: #999;
+  font-size: 16px;
+}
+.bold{
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0.25rem 0;
+  font-size: 15px;
+}
+.name .bold{
+  font-size: 20px;
+}
+.email .bold{
+  text-transform: lowercase;
+}
+
+.phone .bold::before{
+  content: '#';
+}
+
+/* header */
+.header{
+  display: flex;
+  border-bottom: 2px solid black;
+}
+
+.intro{
+  flex-grow: 4;
+  padding: 0.75rem 1rem;
+  margin: 0px;
+}
+
+.qr{
+  flex-grow: 0;
+  text-align: left;
+}
+/* ./header */
+
+/* details */
+
+.details{
+  padding: 1rem;
+}
+
+/* ./ details */
+
+/* professional summary */
+.summary{
+  padding: 1.5rem 0;
+}
+
+.title{
+  text-decoration: underline;
+  text-transform: capitalize;
+}
+.summary-body{
+
+}
+
+
+/* skills */
+.skills{
+  display:  grid;
+  margin-bottom: 1.5rem;
+}
+
+.skills-body{
+  display: flex;
+}
+
+.skill-left{
+  flex-basis: 50%;
+}
+
+.skill-right{
+  flex-basis: 50%;
+}
+
+.skills ul{
+  margin: 0 0.5rem 0 0;
+}
+
+.experience-body{
+  /* border-left: 5px dotted #777; */
+  background: white;
+  border-left: 5px solid transparent;
+  border-image: url(../images/border.png) 30 round ;
+  margin: 1rem 0;
+  padding: 0.25rem 1rem;
+  
+}
+
+.experience{
+  padding-left: 1.25rem;
+  border-left: 3px solid rgba(1, 104, 1,0.25);
+  margin: 1rem 0;
+}
+.experience-date{
+
+}
+
+.date{
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 0.75rem;
+}
+
+.experience-title{
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.position{
+  font-weight: 600;
+color: rgb(1, 104, 1);
+}
+
+.experience-description{
+  text-transform: capitalize;
+  font-size: 0.5rem;
+}
+
+/* education */
+
+.education-body{
+  background: white;
+  border-left: 5px solid transparent;
+  border-image: url(../images/border.png) 30 round ;
+  margin: 1rem 0;
+  padding: 0.25rem 1rem;
+}
+
+.education{
+  padding-left: 1.25rem;
+  border-left: 3px solid rgba(1, 104, 1,0.25);
+  margin: 1rem 0;
+}
+
+.degree{
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.degree > abbr {
+  text-decoration: none;
+}
+
+.projects-body{
+  background: white;
+  border-left: 5px solid transparent;
+  border-image: url(../images/border.png) 30 round ;
+  margin: 1rem 0;
+  padding: 0.25rem 1rem;
+}
+.project{
+  margin: 1rem 0;
+}
+.project-date{
+  padding:5px 0;
+}
+.project-body{
+  padding-left: 1.25rem;
+  border-left: 3px solid rgba(1, 104, 1,0.25);
+}
+
+.project-link{
+  font-weight: 500;
+  text-decoration: none;
+  color: olivedrab;
+}
+
+.project-for{
+  font-weight: 550;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+}
+
+.tech-wrap{
+  display: inline-block;
+  margin: 8px 0 8px 0;
+}
+
+.tech{
+  padding: 0.5rem 0.4rem 0rem 0.4rem;
+  text-transform: capitalize;
+  border-bottom: 2px solid rgba(1, 104, 1,0.25);
+  border-radius: 5px;
+  margin: 1rem 0;
+  background: rgb(245, 235, 235);
+}
+
+.technical-body{
+  text-align: center;
+}
+
+.collapse > .project-body{
+  height: 0;
+  overflow: hidden;
+}
+
+.cv-icon{
+  padding: 0 3px;
+  vertical-align: middle;
+}
+
+.references{
+ margin-top: 20px;
+}
+
+.reference{
+  padding: 0.5rem;
+}
+
+.reference .name{
+  font-weight: 600;
+}
+
+.reference .contact{
+  display: flex;
+}
+.reference .contact div {
+  padding-right: 10px;
+}
+
+.reference a {
+  text-decoration: none;
+  color: black;
+  font-weight:500;
+}
+.reference div{
+  padding-bottom: 2px;
+}
+
+.core-skills {
+  display: flex;
+  justify-content: space-around;
+}
+
+.core-skill {
+  text-align: center;
+}
+
+.core-skill > h5 {
+  font-size: 2rem;
+  font-weight: 100;
+  margin-block-end: 30px;
+}
+
+.core-skill > p {
+  min-width: 180px;
+  margin-block-start: 0;
+  font-variant: small-caps;
+}
